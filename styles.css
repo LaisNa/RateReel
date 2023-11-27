@@ -1,0 +1,605 @@
+body {
+    background: #191919;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    padding: 8px 160px;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(250, 246, 240, 0.10);
+    backdrop-filter: blur(50px);
+}
+
+.specialBotao {
+    color: #C84B31;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.024px;
+    text-decoration: none;
+}
+
+.standardBotao {
+    color: #fbf7f6;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.024px;
+    text-decoration: none;
+}
+
+.tramiteBotao {
+    display: flex;
+    width: 103px;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 16px;
+    border: none;
+    background: #035397;
+
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.024px;
+}
+
+#cadastrarBotao {
+    display: flex;
+    width: 103px;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 16px;
+    border: none;
+    background: #C84B31;
+
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.024px;
+}
+
+#botoesNav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+#parteUm {
+    display: flex;
+    height: 795px;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+#subParteUm {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 140px;
+}
+
+#textoPrincipal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 36px;
+
+    color: #FAF6F0;
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.048px;
+
+    width: 270px;
+}
+
+#parteDois {
+    display: flex;
+    padding: 40px 160px;
+    flex-direction: column;
+    align-items: center;
+    gap: 120px;
+    height: 576px;
+}
+
+#textoDois {
+    color: var(--neutral-light, #FAF6F0);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.054px;
+}
+
+
+#destaqueTextoDois {
+    color: var(--color-secundary, #C84B31);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.054px;
+}
+
+#topicosImportantes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.topico {
+    color: #FAF6F0;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.036px;
+
+    width: 326px;
+}
+
+footer {
+    display: flex;
+    padding: 8px 543px;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(250, 246, 240, 0.10);
+
+    color: rgba(255, 255, 255, 0.70);
+
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.08px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#paginaLogin {
+    background-image: url('Imagens/bgLogin.png');
+    margin: 0;
+    /* Remover margens padrão do corpo da página */
+    padding: 0;
+    /* Remover padding padrão do corpo da página */
+    background-size: cover;
+    /* Ajustar a imagem para cobrir todo o fundo */
+    background-position: center;
+    /* Centralizar a imagem de fundo */
+    background-repeat: no-repeat;
+    /* Evitar repetição da imagem de fundo */
+    height: 100dvh;
+    /* Garantir que a imagem de fundo cubra toda a altura da janela de visualização */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Cor do texto para garantir contraste com a imagem de fundo */
+}
+
+#caixaLoginCadastro {
+    display: inline-flex;
+    padding: 32px 64px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    border-radius: 40px;
+    border: 6px solid rgba(250, 246, 240, 0.10);
+    background: rgba(25, 25, 25, 0.90);
+}
+
+#tituloCaixa {
+    color: var(--neutral-light, #FAF6F0);
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.048px;
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin: 0;
+}
+
+input {
+    display: flex;
+    width: 368px;
+    padding: 16px;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+
+    border-radius: 8px;
+    border: 2px solid var(--neutral-light, #FAF6F0);
+    background: rgba(250, 246, 240, 0.10);
+
+    color: rgba(255, 255, 255, 0.80);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.024px;
+}
+
+
+#textoEsqueceuSenha {
+    color: var(--color-secundary, #C84B31);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.024px;
+}
+
+#divEsqueceuSenha {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+#botaoLogin {
+    display: flex;
+    width: 184px;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 16px;
+    border: none;
+    background: var(--color-primary, #035397);
+
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.024px;
+}
+
+#textoCaixaLogin {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.024px;
+}
+
+#spanCaixaLogin {
+    color: var(--color-secundary, #C84B31);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.024px;
+}
+
+/*Estilização dos elementos da página inicial após login*/ 
+.movie-grid .div {
+    overflow: hidden;
+    width: 1440px;
+    height: 900px;
+    position: relative;
+}
+
+.movie-grid .frame {
+    position: absolute;
+    width: 142px;
+    height: 206px;
+    top: 1197px;
+    left: 160px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.movie-grid .frame-2 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    position: absolute;
+    top: 128px;
+    left: 160px;
+}
+
+.movie-grid .img {
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.movie-grid .frame-3 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.movie-grid .standardTitle {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Roboto", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 0.04px;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.movie-grid .frame-4 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 24px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.movie-grid .frame-5 {
+    display: flex;
+    width: 1120px;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.movie-grid .cartaz {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.movie-grid .frame-7 {
+    position: relative;
+    width: 142px;
+    height: 206px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.movie-grid .text-wrapper-2 {
+    position: relative;
+    width: 142px;
+    font-family: "Roboto", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 0.02px;
+    line-height: normal;
+}
+
+.movie-grid .text-wrapper-3 {
+    position: relative;
+    width: fit-content;
+    font-family: "Roboto", Helvetica;
+    font-weight: 600;
+    color: var(--colorsecundary);
+    font-size: 16px;
+    letter-spacing: 0.02px;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.movie-grid .nav {
+    display: flex;
+    width: 1440px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 160px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #faf6f01a;
+    backdrop-filter: blur(100px) brightness(100%);
+    -webkit-backdrop-filter: blur(100px) brightness(100%);
+}
+
+.movie-grid .logo-pequeno {
+    position: relative;
+    width: 72px;
+    height: 56px;
+}
+
+.movie-grid .frame-8 {
+    display: flex;
+    width: 71px;
+    height: 28px;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    top: 28px;
+    left: 0;
+}
+
+.movie-grid .ellipse {
+    background-color: var(--colorsecundary);
+    position: relative;
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+}
+
+.movie-grid .text-wrapper-4 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Roboto", Helvetica;
+    font-weight: 800;
+    color: var(--neutrallight);
+    font-size: 24px;
+    letter-spacing: 0.12px;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.movie-grid .frame-9 {
+    display: flex;
+    width: 72px;
+    height: 28px;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.movie-grid .ellipse-2 {
+    background-color: var(--colorprimary);
+    position: relative;
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+}
+
+.movie-grid .botoes-nav {
+    display: inline-flex;
+    align-items: center;
+    gap: 24px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.movie-grid .text-wrapper-5 {
+    position: relative;
+    width: fit-content;
+    font-family: "Roboto", Helvetica;
+    font-weight: 600;
+    color: var(--neutrallight);
+    font-size: 16px;
+    letter-spacing: 0.02px;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.movie-grid .entrar-botao {
+    display: flex;
+    width: 103px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 16px;
+    position: relative;
+    background-color: var(--colorprimary);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.movie-grid .text-wrapper-6 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Roboto", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 0.02px;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+
+
+#paginaCadastro {
+    background-image: url('Imagens/bgCadastro.png');
+    margin: 0;
+    /* Remover margens padrão do corpo da página */
+    padding: 0;
+    /* Remover padding padrão do corpo da página */
+    background-size: cover;
+    /* Ajustar a imagem para cobrir todo o fundo */
+    background-position: center;
+    /* Centralizar a imagem de fundo */
+    background-repeat: no-repeat;
+    /* Evitar repetição da imagem de fundo */
+    height: 100dvh;
+    /* Garantir que a imagem de fundo cubra toda a altura da janela de visualização */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Cor do texto para garantir contraste com a imagem de fundo */
+}
+
+#botaoCadastro {
+    display: flex;
+    width: 184px;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 16px;
+    border: none;
+    background: var(--color-secundary, #C84B31);
+
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.024px;
+}
