@@ -14,100 +14,93 @@
         <img src="Imagens/logoPequeno.svg" alt="Logo do RateReel">
 
         <div id="botoesNav">
-            <a id="homeBotao" href="index.html">Página Inicial</a>
-            <button href="#paginaLogin" type="button" id="entrarBotao" class="tramiteBotao">Entrar</button>
-            <button href="#Cadastro" type="button" id="cadastrarBotao">Cadastrar</button>
+            <a class="ancoraLaranja" href="index.html">Página Inicial</a>
+            <button href="#paginaLogin" type="button" id="entrarBotao" class="botaoAzulPequeno">Entrar</button>
+            <button href="#Cadastro" type="button" id="cadastrarBotao" class="botaoLaranjaPequeno">Cadastrar</button>
         </div>
     </nav>
 
-    <section id="paginaInicial">
-        <main>
-            <div id="parteUm">
-                <div id="subParteUm">
-                    <img id="hugoImagem" src="Imagens/hugoFilme.jpg" alt="Imagem do filme Hugo">
+    <main id="paginaInicial">
+        <div id="parteUm">
+            <div id="subParteUm">
+                <img id="hugoImagem" src="Imagens/hugoFilme.jpg" alt="Imagem do filme Hugo">
 
-                    <div id="textoPrincipal">
-                        <img src="Imagens/logoGrande.svg" alt="Logo do RateReel">
-                        <p>Sua vida cinematográfica em foco</p>
-                    </div>
-                </div>
-
-                <img id="setaBaixo" src="Imagens/setasBaixo.svg" alt="Setas para Baixo">
-            </div>
-            <div id="parteDois">
-                <div id="textoDois">
-                    <p>Registre, avalie, favorite.
-                    <p>
-                    <p> <span id="destaqueTextoDois">Viva o cinema</span> como nunca antes!</p>
-                </div>
-
-                <div id="topicosImportantes">
-                    <div class="topico">
-                        <img src="Imagens/estrelaIcon.svg" alt="Icone de Estrela">
-                        <p>Avalie em uma escala de cinco estrelas.</p>
-                    </div>
-
-                    <div class="topico">
-                        <img src="Imagens/coracaoIcon.svg" alt="Icone de Coração">
-                        <p>Curta os filmes favoritos.</p>
-                    </div>
-
-                    <div class="topico">
-                        <img src="Imagens/listaIcon.svg" alt="Icone de Lista">
-                        <p>Crie listas personalizadas.</p>
-                    </div>
+                <div id="textoPrincipal">
+                    <img src="Imagens/logoGrande.svg" alt="Logo do RateReel">
+                    <h1>Sua vida cinematográfica em foco</h1>
                 </div>
             </div>
-        </main>
 
-        <footer>
-            <p>&copy; - Todos os direitos reservados. </p>
-        </footer>
-    </section>
-
-    <section id="paginaLogin">
-        <main>
-            <div id="caixaLoginCadastro">
-                <h1 id="tituloCaixa">Login</h1>
-
-                <form>
-                    <input type="text" id="inputUsuario" placeholder="Usuário" required>
-
-                    <div id="divEsqueceuSenha">
-                        <input type="text" id="inputSenha" placeholder="Senha" required>
-                        <a id="textoEsqueceuSenha">Esqueceu a senha?</a>
-
-                    </div>
-
-                    <button type="botaoLogin" id="botaoLogin">Entrar</button>
-
-                    <p id="textoCaixaLogin">Não possui uma conta? <span id="spanCaixaLogin">Cadastre-se</span></p>
-
-                </form>
+            <img id="setaBaixo" src="Imagens/setasBaixo.svg" alt="Setas para Baixo">
+        </div>
+        <div id="parteDois">
+            <div id="textoDois">
+                <h1>Registre, avalie, favorite.<h1>
+                <h1> <span id="destaqueTextoDois">Viva o cinema</span> como nunca antes!</h1>
             </div>
-        </main>
-    </section>
 
-    <section id="paginaCadastro">
-        <main>
-            <div id="caixaLoginCadastro">
-                <h1 id="tituloCaixa">Cadastro</h1>
+            <div id="topicosImportantes">
+                <div class="topico">
+                    <img src="Imagens/estrelaIcon.svg" alt="Icone de Estrela">
+                    <h2>Avalie em uma escala de cinco estrelas.</h2>
+                </div>
 
-                <form>
-                    <input type="text" id="inputEmailCadastro" placeholder="E-mail" required>
+                <div class="topico">
+                    <img src="Imagens/coracaoIcon.svg" alt="Icone de Coração">
+                    <h2>Curta os filmes favoritos.</h2>
+                </div>
 
-                    <input type="text" id="inputUsuarioCadastro" placeholder="Usuário" required>
-
-                    <input type="text" id="inputSenhaCadastro" placeholder="Senha" required>
-
-                    <input type="text" id="inputSenhaConfirmarCadastro" placeholder="Confirmar senha" required>
-
-                    <button type="botaoLCadastro" id="botaoCadastro">Cadastrar</button>
-
-                </form>
+                <div class="topico">
+                    <img src="Imagens/listaIcon.svg" alt="Icone de Lista">
+                    <h2>Crie listas personalizadas.</h2>
+                </div>
             </div>
-        </main>
-    </section>
+        </div>
+    </main>
+
+    <main id="paginaLogin">
+        <div id="caixaLoginCadastro">
+            <h1>Login</h1>
+
+            <form>
+                <input type="text" id="inputUsuario" placeholder="Usuário" required>
+
+                <div id="divEsqueceuSenha">
+                    <input type="text" id="inputSenha" placeholder="Senha" required>
+                    <a class="ancoraLaranja">Esqueceu a senha?</a>
+
+                </div>
+
+                <button type="botaoLogin" id="botaoLogin" class="botaoAzulGrande">Entrar</button>
+
+                <p class="pBold">Não possui uma conta? <a class="ancoraLaranja">Cadastre-se</a></p>
+
+            </form>
+        </div>
+    </main>
+
+    <main id="paginaCadastro">
+        <div id="caixaLoginCadastro">
+            <h1>Cadastro</h1>
+
+            <form>
+                <input type="text" id="inputEmailCadastro" placeholder="E-mail" required>
+
+                <input type="text" id="inputUsuarioCadastro" placeholder="Usuário" required>
+
+                <input type="text" id="inputSenhaCadastro" placeholder="Senha" required>
+
+                <input type="text" id="inputSenhaConfirmarCadastro" placeholder="Confirmar senha" required>
+
+                <button type="botaoLCadastro" id="botaoCadastro" class="botaoLaranjaGrande">Cadastrar</button>
+
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; - Todos os direitos reservados. </p>
+    </footer>
 </body>
 
 </html>
