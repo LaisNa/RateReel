@@ -14,14 +14,14 @@
         <img src="Imagens/logoPequeno.svg" alt="Logo do RateReel">
 
         <div id="botoesNav">
-            <a id="homeBotao" href="home.html" class="ancoraLaranja">Página Inicial</a>
-            <a id="moviesBotao" href="movies.html" class="ancoraBranca">Filmes</a>
-            <a id="ratingsBotao" href="ratings.html" class="ancoraBranca">Minhas Avaliações</a>
-            <button href="#Sair" type="button" id="sairBotao" class="botaoAzulPequeno">Sair</button>
+            <a id="homeBotao" class="ancoraLaranja">Página Inicial</a>
+            <a id="moviesBotao" class="ancoraBranca">Filmes</a>
+            <a id="ratingsBotao" class="ancoraBranca">Minhas Avaliações</a>
+            <button type="button" id="sairBotao" class="botaoAzulPequeno">Sair</button>
         </div>
     </nav>
 
-    <main id="home-page" class="movie-grid">
+    <main id="home-page" class="movie-grid" style="display: block;">
         <div id="trending" class="div">
             <div id="latest-ratings" class="div">
                 <div class="frame"></div>
@@ -102,7 +102,7 @@
     </main>
 
 
-    <main id="allMovies" class="movie-grid">
+    <main id="allMovies" class="movie-grid" style="display: none;">
         <div class="div">
             <div class="div">
                 <div class="frame"></div>
@@ -182,7 +182,7 @@
     </main>
 
 
-    <main id="allRatings" class="movie-grid">
+    <main id="allRatings" class="movie-grid" style="display: none;">
         <div class="div">
             <div class="div">
                 <div class="frame"></div>
@@ -278,6 +278,8 @@
     <footer>
         <p>&copy;RateReel - Todos os direitos reservados. </p>
     </footer>
+    
+    <script src="main.js"> </script>
 
 </body>
 
