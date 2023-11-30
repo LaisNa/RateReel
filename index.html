@@ -14,9 +14,9 @@
         <img src="Imagens/logoPequeno.svg" alt="Logo do RateReel">
 
         <div id="botoesNav">
-            <a class="ancoraLaranja" href="index.html">Página Inicial</a>
-            <button href="#paginaLogin" type="button" id="entrarBotao" class="botaoAzulPequeno">Entrar</button>
-            <button href="#Cadastro" type="button" id="cadastrarBotao" class="botaoLaranjaPequeno">Cadastrar</button>
+            <button onclick="mostrarMain('paginaInicial')" class="ancoraLaranja">Página Inicial</button>
+            <button onclick="mostrarMain('paginaLogin')"  class="botaoAzulPequeno">Entrar</button>
+            <button onclick="mostrarMain('paginaCadastro')" class="botaoLaranjaPequeno">Cadastrar</button>
         </div>
     </nav>
 
@@ -58,7 +58,7 @@
         </div>
     </main>
 
-    <main id="paginaLogin">
+    <main id="paginaLogin" style="display: none;">
         <div id="caixaLoginCadastro">
             <h1>Login</h1>
 
@@ -79,7 +79,7 @@
         </div>
     </main>
 
-    <main id="paginaCadastro">
+    <main id="paginaCadastro" style="display: none;">
         <div id="caixaLoginCadastro">
             <h1>Cadastro</h1>
 
@@ -99,8 +99,10 @@
     </main>
 
     <footer>
-        <p>&copy; - Todos os direitos reservados. </p>
+        <p>&copy;RateReel - Todos os direitos reservados. </p>
     </footer>
+
+    <script src="main.js"> </script>
 </body>
 
 </html>
