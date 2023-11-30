@@ -14,13 +14,13 @@
         <img src="Imagens/logoPequeno.svg" alt="Logo do RateReel">
 
         <div id="botoesNav">
-            <button onclick="mostrarMain('paginaInicial')" class="ancoraLaranja">Página Inicial</button>
-            <button onclick="mostrarMain('paginaLogin')"  class="botaoAzulPequeno">Entrar</button>
-            <button onclick="mostrarMain('paginaCadastro')" class="botaoLaranjaPequeno">Cadastrar</button>
+            <button onclick="() => mostrarMain(1)" class="ancoraLaranja">Página Inicial</button>
+            <button onclick="() => mostrarMain(2)"  class="botaoAzulPequeno">Entrar</button>
+            <button onclick="() => mostrarMain(3)" class="botaoLaranjaPequeno">Cadastrar</button>
         </div>
     </nav>
 
-    <main id="paginaInicial">
+    <main id="paginaInicial" style="display: block;">
         <div id="parteUm">
             <div id="subParteUm">
                 <img id="hugoImagem" src="Imagens/hugoFilme.jpg" alt="Imagem do filme Hugo">

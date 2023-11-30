@@ -1,13 +1,13 @@
-function mostrarMain(mainId) {
-    var mains = document.querySelectorAll('main');
+import React, { useState } from 'react';
 
-    mains.forEach(function(main) {
-        main.style.display = 'none';
-    })
+const App = () => {
+    const [mainVisivel, mainVisivelEscolhida] = useState(1);
 
-    var selecionarMain = document.getElementById(mainId);
+    const mostrarMain = (numeroMain) => {
+        mainVisivelEscolhida(numeroMain);
+    };
 
-    if(selecionarMain) {
-        selecionarMain.style.display = 'block';
-    }
+    return (mostrarMain);
 }
+
+export default App;
